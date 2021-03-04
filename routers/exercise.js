@@ -39,13 +39,13 @@ router.get("/:id", (req, res)=>{
 router.put("/update/:id", (req, res)=>{
     try{
             Exercise.findOneAndUpdate({_id:req.params.id}, req.body, (err, results)=>{
-                res.json("Successfully Updated!")
+               res.json("Successfully Updated!")
             })
 
 
 
     }catch(err){
-        console.log("Error is: "+err)
+        console.log("Error "+err)
     }
 }
 
