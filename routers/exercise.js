@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router()
-const mongoose = require("mongoose");
 const Exercise = require("../models/exercise.model")
 require("dotenv").config();
-const uri = process.env.ATLAS_URI
+
 router.get("/", (req, res)=>{
     Exercise.find()
     .then(exercise=>res.json(exercise))
