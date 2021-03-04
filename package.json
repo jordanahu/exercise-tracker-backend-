@@ -9,8 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false cd ../ && npm install && npm run build"
+    "start": "node server.js"
   },
   "author": "JORDAN AHU",
   "license": "ISC",
